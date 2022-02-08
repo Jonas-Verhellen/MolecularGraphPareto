@@ -1,0 +1,17 @@
+---
+data_file: data/smiles/guacamol_filtered.smi
+batch_size: 20
+initial_size: 100
+population_size: 35
+direction_size: 25
+workers: 1
+threads: 2
+generations: 150
+fitness:
+  task: "mpo_pioglitazone"
+arbiter:
+  rules:
+  - Glaxo
+mutator:
+  data_file: data/smarts/mutation_collection.tsv
+
