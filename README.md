@@ -10,7 +10,7 @@ This repo contains open-source implementations of NSGA-II, NSGA-III and GB-EPI f
 
 ## Instuctions on Running the Code
 
-To manage configuration files and outputs we make use of [Hydra](), which allows us to dynamically override configuration files through the command line. Examples bash files (called run.sh) of how to apply these capabilities to the different algorithms to create multiruns can be found in the each algorithm folder. To use the algorithms for a single run, go to the configuration file, set your preferences, and run the algorithm from its homefolder. For instance for NSGA-III, the configuration file looks like 
+To manage configuration files and outputs we make use of [Hydra](), which allows us to dynamically override configuration files through the command line. Example bash files (called run.sh) of how to apply these capabilities to the different algorithms to create multiruns can be found in the each algorithm folder. To use the algorithms for a single run, go to the configuration file, set your preferences, and run the algorithm from its homefolder. For instance for NSGA-III, the configuration file looks like 
 
 ```
 ---
