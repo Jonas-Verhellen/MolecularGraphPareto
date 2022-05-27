@@ -21,6 +21,53 @@ Important dependencies of the Argenomic software environment and where to find t
 * [MultipleComparisons] (https://github.com/ramirandaq/MultipleComparisons) - Reference implementations of the extended similarity metrics used to calculate the internal similarity. 
 * [Omegaconf](https://github.com/omry/omegaconf) - Configuration system for multiple sources, providing a consistent API.
 
+## Instuctions on Running the Code
+
+To manage configuration files and outputs we make use of [Hydra](), which allows us to dynamically override configuration files through the command line. Examples bash files (called run.sh) of how to apply these capabilities to the different algorithms to create multiruns can be found in the each algorithm folder. To use the algorithms for a single run, go to the configuration file, set your preferences, and run the algorithm from its homefolder. For instance for NSGA-III, the configuration file looks like 
+
+```
+---
+data_file: data/smiles/guacamol_filtered.smi
+batch_size: 20
+initial_size: 100
+workers: 1
+threads: 2
+generations: 150
+archive:
+  name: mpo_cobimetinib
+  size: 150
+  accuracy: 25000
+descriptor:
+  properties:
+  - Descriptors.ExactMolWt
+  - Descriptors.MolLogP
+  - Descriptors.TPSA
+  - Crippen.MolMR
+  ranges:
+  - - 140
+    - 555
+  - - 0.0
+    - 7.0
+  - - 0
+    - 140
+  - - 40
+    - 130
+fitness:
+  task: mpo_cobimetinib
+arbiter:
+  rules:
+  - Glaxo
+mutator:
+  data_file: data/smarts/mutation_collection.tsv
+
+```
+
+and the algorithm can be run by 
+
+```
+python nsga3.py 
+```
+
 
 ## Acknowledgments
 

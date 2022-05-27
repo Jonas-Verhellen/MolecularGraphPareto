@@ -1,0 +1,16 @@
+---
+data_file: data/smiles/guacamol_initial_rediscovery_celecoxib.smi
+batch_size: 20
+initial_size: 100
+population_size: 100
+workers: 1
+threads: 2
+generations: 40
+fitness:
+  task: "mpo_cobimetinib"
+arbiter:
+  rules:
+  - Glaxo
+mutator:
+  data_file: data/smarts/mutation_collection.tsv
+

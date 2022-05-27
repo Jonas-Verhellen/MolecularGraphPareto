@@ -34,6 +34,7 @@ class NSGA3:
         self.batch_size = config.batch_size
         self.initial_size = config.initial_size
         self.population_size = config.population_size
+        self.task = config.fitness.task
         self.arbiter = Arbiter(config.arbiter)
         self.fitness = Fitness(config.fitness)
         self.mutator = Mutator(config.mutator)
@@ -111,7 +112,10 @@ class NSGA3:
         return self.arbiter(generated_molecules)
 
     def calculate_fitnesses(self, molecules: List[Molecule]) -> List[Molecule]:
-        molecules = bag.map(self.fitness, bag.from_sequence(molecules)).compute() 
+        if self.task == "mpo_dap_kinases" or "mpo_antipsychotics":
+            molecules = self.fitness.batch_score(molecules) 
+        else:
+            molecules = bag.map(self.fitness, bag.from_sequence(molecules)).compute() 
         self.fitness.calls += len(molecules)
         return molecules
 
