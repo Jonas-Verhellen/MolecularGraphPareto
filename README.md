@@ -58,7 +58,7 @@ Important dependencies of the Argenomic software environment and where to find t
 * [RDKit](https://github.com/rdkit/rdkit) - Cheminformatics and machine-learning software toolkit, used for storing and manipulating molecules.
 * [Pymoo](https://pymoo.org/index.html) - Multi-objective optimization toolkit in Python, providing state-of-the-art reference directions.
 * [Pymoo](https://github.com/esa/pygmo2) - Massively parallel optimization library in python, providing implementations of fast dominatefd hypervolume methods. 
-* [MultipleComparisons] (https://github.com/ramirandaq/MultipleComparisons) - Reference implementations of the extended similarity metrics used to calculate the internal similarity. 
+* [MultipleComparisons](https://github.com/ramirandaq/MultipleComparisons) - Reference implementations of the extended similarity metrics used to calculate the internal similarity. 
 * [Omegaconf](https://github.com/omry/omegaconf) - Configuration system for multiple sources, providing a consistent API.
 
 ## Authors
