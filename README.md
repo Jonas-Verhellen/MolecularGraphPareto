@@ -1,3 +1,13 @@
+# Pareto Optimisation for Molecular Design
+
+</div>
+
+[![GitHub issues](https://img.shields.io/github/issues/Jonas-Verhellen/argenomic)](https://github.com/Jonas-Verhellen/argenomic/issues)
+![GitHub](https://img.shields.io/github/license/Jonas-Verhellen/Argenomic)
+[![DOI](https://img.shields.io/badge/DOI-10.1039/D0SC03544K-blue)](https://pubs.rsc.org/en/content/articlehtml/2020/sc/d0sc03544k)
+
+</div>
+
 ![Logo](/figures/logo.png "Logo")
 
 ## Description
