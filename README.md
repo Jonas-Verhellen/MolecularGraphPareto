@@ -2,9 +2,9 @@
 
 </div>
 
-[![GitHub issues](https://img.shields.io/github/issues/Jonas-Verhellen/argenomic)](https://github.com/Jonas-Verhellen/argenomic/issues)
-![GitHub](https://img.shields.io/github/license/Jonas-Verhellen/Argenomic)
-[![DOI](https://img.shields.io/badge/DOI-10.1039/D0SC03544K-blue)](https://pubs.rsc.org/en/content/articlehtml/2020/sc/d0sc03544k)
+[![GitHub issues](https://img.shields.io/github/issues/Jonas-Verhellen/MolecularGraphPareto)](https://github.com/Jonas-Verhellen/MolecularGraphPareto/issues)
+![GitHub](https://img.shields.io/github/license/Jonas-Verhellen/MolecularGraphPareto)
+[![DOI](https://img.shields.io/badge/DOI-10.1039/D2SC00821A-blue)](https://pubs.rsc.org/en/content/articlehtml/2022/sc/d2sc00821a)
 
 </div>
 
@@ -39,8 +39,6 @@ arbiter:
   - Glaxo
 mutator:
   data_file: data/smarts/mutation_collection.tsv
-
-
 ```
 
 and the algorithms can be run by the following commands 
@@ -72,7 +70,7 @@ Important dependencies of the Argenomic software environment and where to find t
 * [Omegaconf](https://github.com/omry/omegaconf) - Configuration system for multiple sources, providing a consistent API.
 
 ## Authors
-
+Based on the paper *[Graph-based molecular Pareto optimisation.](https://pubs.rsc.org/en/content/articlehtml/2020/sc/d0sc03544k) Chemical Science 13.25 (2022): 7526-7535.*
 * **Jonas Verhellen**
 
 ## Acknowledgments
